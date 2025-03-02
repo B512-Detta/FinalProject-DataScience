@@ -72,7 +72,7 @@ env\Scripts\activate  # Untuk Windows
 pip install -r requirements.txt
 ```
 ### 2. Menjalankan jupyter notebook
-### 3. Membuka app.py
+### 3. Membuka app.py -> sesuaikan dengan model yang dipakai (berada di folder model/..)
 ```
 streamlit run app.py
 ```
@@ -80,8 +80,25 @@ streamlit run app.py
 ### 5. Mengisi semua data yang diperlukan dan tunggu hingga hasil prediksi keluar.
 
 ## Conclusion
-Proyek ini berhasil mengembangkan sistem prediksi dropout yang dapat membantu institusi pendidikan dalam mengidentifikasi siswa berisiko tinggi. Dengan adanya dashboard bisnis, pihak akademik dapat memahami faktor utama yang mempengaruhi dropout serta hubungan antara kondisi ekonomi dengan status akademik siswa. Sistem ini juga dapat digunakan sebagai alat bantu dalam pengambilan keputusan strategis untuk meningkatkan tingkat kelulusan.
+### Berdasarkan analisis yang telah dilakukan, ditemukan beberapa faktor utama yang berkontribusi terhadap tingginya angka dropout di Jaya Jaya Institut.
 
+1. Penyebab Tingginya Dropout
+   - Keterlambatan Pembayaran Tuition Fees
+       - Mahasiswa yang tidak membayar tuition fees tepat waktu memiliki kemungkinan lebih tinggi untuk dropout dibandingkan mereka yang selalu membayar tepat waktu.
+   - Rendahnya Prestasi Akademik
+      - Mahasiswa dengan nilai admission grade yang rendah lebih rentan mengalami dropout.
+      - Nilai yang rendah pada mata kuliah semester pertama dan kedua juga menjadi faktor utama.
+   - Jumlah Mata Kuliah yang Tidak Diselesaikan
+      - Mahasiswa yang memiliki banyak mata kuliah yang tidak dievaluasi atau gagal lebih cenderung tidak menyelesaikan studi mereka.
+   - Usia saat Pendaftaran
+      - Mahasiswa yang mendaftar dengan usia lebih tua memiliki kecenderungan dropout lebih tinggi dibandingkan mereka yang mendaftar pada usia lebih muda.
+
+2. Karakteristik Umum Siswa yang Dropout
+   - Kesulitan Keuangan → Banyak mahasiswa yang mengalami dropout memiliki riwayat keterlambatan dalam pembayaran tuition fees.
+   - Prestasi Akademik Rendah → Admission grade yang rendah dan hasil akademik yang buruk menjadi faktor dominan.
+   - Kurang Aktif dalam Perkuliahan → Mahasiswa dengan jumlah curricular units approved rendah cenderung tidak melanjutkan studi mereka.
+   - Pengaruh Kondisi Ekonomi → Tingkat pengangguran yang tinggi di negara asal mahasiswa berhubungan dengan angka dropout yang lebih besar.
+     
 ### Rekomendasi Action Items
 1. Menggunakan model prediksi secara proaktif untuk mengidentifikasi siswa yang berisiko dropout dan memberikan intervensi yang sesuai.
 2. Meningkatkan dukungan finansial bagi siswa yang mengalami kesulitan membayar tuition fees.
